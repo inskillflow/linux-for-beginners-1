@@ -1,0 +1,27 @@
+{
+  "title": "Linux Débutant • Manipulation de fichiers et dossiers",
+  "description": "Apprendre à créer, copier, déplacer, supprimer et modifier des fichiers et dossiers.",
+  "difficulty": "beginner",
+  "time": "30 minutes", 
+  "details": {
+    "intro": { "text": "intro.md" },
+    "steps": [
+      { "title": "Créer des fichiers et dossiers", "text": "step1.md" },
+      { "title": "Copier et déplacer", "text": "step2.md" },
+      { "title": "Visualiser le contenu des fichiers", "text": "step3.md" },
+      { "title": "Modifier et supprimer", "text": "step4.md" },
+      { "title": "Rechercher des fichiers", "text": "step5.md" }
+    ],
+    "finish": { "text": "finish.md" },
+    "assets": {
+      "host01": [
+        { "file": "assets/sample-files.sh", "target": "/tmp/sample-files.sh" }
+      ]
+    }
+  },
+  "backend": { "imageid": "ubuntu:22.04" },
+  "environment": {
+    "uilayout": "terminal-iframe", 
+    "showdashboard": true
+  }
+}
