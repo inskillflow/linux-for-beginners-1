@@ -1,0 +1,280 @@
+===============================================================================
+    GUIDE COMPLET : DÉPLOYER VOS EXERCICES LINUX SUR KILLERCODA
+===============================================================================
+
+🎯 OBJECTIF : Créer des exercices Linux interactifs pour vos étudiants Thinkific
+
+📋 CE QUE VOUS AVEZ MAINTENANT :
+✅ 3 scénarios Linux complets créés
+✅ Structure de fichiers prête
+✅ Contenu pédagogique progressif
+
+🚀 PROCHAINES ÉTAPES DÉTAILLÉES :
+
+===============================================================================
+ÉTAPE 1 : NOMMER VOTRE DÉPÔT GITHUB
+===============================================================================
+
+📌 NOM SUGGÉRÉ POUR VOTRE DÉPÔT :
+   "cours-linux-1"
+   
+   OU
+   
+   "linux-for-beginners-1"
+
+📌 POURQUOI CE NOM ?
+   - Facile à retenir
+   - Décrit le contenu (cours Linux)
+   - Professionnel pour vos étudiants
+
+===============================================================================
+ÉTAPE 2 : CRÉER LE DÉPÔT GITHUB
+===============================================================================
+
+1. Allez sur https://github.com
+2. Cliquez sur "New repository" (bouton vert)
+3. Remplissez :
+   - Repository name : "cours-linux-killercoda"
+   - Description : "Exercices Linux interactifs pour débutants avec Killercoda"
+   - ✅ Public (obligatoire pour Killercoda gratuit)
+   - ✅ Add a README file
+4. Cliquez "Create repository"
+
+===============================================================================
+ÉTAPE 3 : UPLOADER VOS FICHIERS SUR GITHUB
+===============================================================================
+
+MÉTHODE A - Via l'interface web GitHub (plus simple) :
+1. Dans votre nouveau dépôt, cliquez "uploading an existing file"
+2. Glissez-déposez TOUS vos dossiers :
+   - linux-basics-01-introduction/
+   - linux-basics-02-navigation/
+   - linux-basics-03-files/
+3. Commit message : "Ajout des 3 premiers exercices Linux"
+4. Cliquez "Commit changes"
+
+MÉTHODE B - Via Git en ligne de commande :
+1. Clonez votre dépôt : git clone https://github.com/VOTRE-USERNAME/cours-linux-killercoda.git
+2. Copiez vos dossiers dans le dépôt cloné
+3. git add .
+4. git commit -m "Ajout des exercices Linux"
+5. git push
+
+===============================================================================
+ÉTAPE 4 : CRÉER VOTRE PROFIL KILLERCODA
+===============================================================================
+
+1. Allez sur https://killercoda.com
+2. Cliquez "Sign up" puis "Continue with GitHub"
+3. Autorisez Killercoda à accéder à GitHub
+4. Une fois connecté, allez dans "Creator" (menu du haut)
+
+===============================================================================
+ÉTAPE 5 : CONFIGURER VOTRE PROFIL CREATOR
+===============================================================================
+
+Dans Creator → Profile, remplissez :
+
+📝 TITRE : "InskillFlow - Formation Linux"
+📝 DESCRIPTION :
+"Exercices pratiques Linux pour débutants. Environnements interactifs pour apprendre les commandes de base, la navigation et la manipulation de fichiers. Parfait pour débuter avec Linux en toute sécurité."
+
+📝 WEBSITE (optionnel) : votre site Thinkific
+📝 GITHUB : votre nom d'utilisateur GitHub
+
+Cliquez SAVE
+
+===============================================================================
+ÉTAPE 6 : CONNECTER VOTRE DÉPÔT GITHUB
+===============================================================================
+
+1. Dans Creator → Repository
+2. Cliquez "Connect Repository"
+3. Sélectionnez votre dépôt "cours-linux-killercoda"
+4. Branch : "main" (ou "master")
+5. Base Path : laissez vide ou mettez "/"
+6. Cliquez "Connect"
+
+⚠️ SI ERREUR DE PERMISSIONS :
+1. Copiez la "Deploy Key" affichée
+2. Allez dans GitHub → Settings de votre dépôt → Deploy Keys
+3. Cliquez "Add deploy key"
+4. Collez la clé, cochez "Allow write access"
+5. Cliquez "Add key"
+
+===============================================================================
+ÉTAPE 7 : CRÉER VOS SCÉNARIOS DANS KILLERCODA
+===============================================================================
+
+Pour CHAQUE exercice (répétez 3 fois) :
+
+7.1) Dans Creator → Scenarios
+7.2) Cliquez "New Scenario"
+7.3) Remplissez :
+
+EXERCICE 1 :
+- Title : "Linux Débutant - Introduction et commandes de base"
+- Slug : "linux-basics-01-introduction"
+- Path : "linux-basics-01-introduction"
+- Visibility : "Public"
+
+EXERCICE 2 :
+- Title : "Linux Débutant - Navigation système de fichiers"
+- Slug : "linux-basics-02-navigation"  
+- Path : "linux-basics-02-navigation"
+- Visibility : "Public"
+
+EXERCICE 3 :
+- Title : "Linux Débutant - Manipulation fichiers et dossiers"
+- Slug : "linux-basics-03-files"
+- Path : "linux-basics-03-files"
+- Visibility : "Public"
+
+7.4) Cliquez "Create" puis "Publish"
+
+===============================================================================
+ÉTAPE 8 : TESTER VOS SCÉNARIOS
+===============================================================================
+
+1. Pour chaque scénario créé, cliquez sur son nom
+2. Cliquez "Launch" ou "Start"
+3. Vérifiez que :
+   - Le terminal s'ouvre correctement
+   - Les commandes fonctionnent
+   - Les fichiers d'assets sont présents
+   - Les instructions sont claires
+
+===============================================================================
+ÉTAPE 9 : RÉCUPÉRER LES URLS POUR THINKIFIC
+===============================================================================
+
+Vos URLs finales seront :
+
+🔗 Exercice 1 : https://killercoda.com/VOTRE-USERNAME/scenario/linux-basics-01-introduction
+🔗 Exercice 2 : https://killercoda.com/VOTRE-USERNAME/scenario/linux-basics-02-navigation  
+🔗 Exercice 3 : https://killercoda.com/VOTRE-USERNAME/scenario/linux-basics-03-files
+
+Remplacez "VOTRE-USERNAME" par votre vrai nom d'utilisateur Killercoda.
+
+===============================================================================
+ÉTAPE 10 : INTÉGRER DANS THINKIFIC
+===============================================================================
+
+OPTION A - Liens directs :
+Dans vos leçons Thinkific, ajoutez des boutons :
+"🚀 Lancer l'exercice pratique" → lien vers Killercoda
+
+OPTION B - iFrames (plus immersif) :
+```html
+<div style="height: 800px; border: 2px solid #007cba; border-radius: 8px;">
+  <iframe src="https://killercoda.com/VOTRE-USERNAME/scenario/linux-basics-01-introduction"
+          style="width:100%; height:100%; border:0;"
+          allow="clipboard-read; clipboard-write">
+  </iframe>
+</div>
+```
+
+===============================================================================
+ÉTAPE 11 : CONFIGURATION WEBHOOK (OPTIONNEL)
+===============================================================================
+
+Pour synchronisation automatique :
+
+1. Creator → Repository → copiez le "Webhook URL"
+2. GitHub → Settings de votre dépôt → Webhooks
+3. Add webhook :
+   - Payload URL : collez l'URL Killercoda
+   - Content type : application/json
+   - Secret : copiez depuis Killercoda
+   - Events : Just the push event
+4. Add webhook
+
+===============================================================================
+STRUCTURE FINALE DE VOTRE DÉPÔT
+===============================================================================
+
+cours-linux-killercoda/
+├── README.md
+├── linux-basics-01-introduction/
+│   ├── index.json
+│   ├── intro.md
+│   ├── step1.md
+│   ├── step2.md
+│   ├── step3.md
+│   └── finish.md
+├── linux-basics-02-navigation/
+│   ├── index.json
+│   ├── intro.md
+│   ├── step1.md
+│   ├── step2.md
+│   ├── step3.md
+│   ├── step4.md
+│   ├── finish.md
+│   └── assets/
+│       └── setup.sh
+└── linux-basics-03-files/
+    ├── index.json
+    ├── intro.md
+    ├── step1.md
+    ├── step2.md
+    ├── step3.md
+    ├── step4.md
+    ├── step5.md
+    ├── finish.md
+    └── assets/
+        └── sample-files.sh
+
+===============================================================================
+CHECKLIST FINALE
+===============================================================================
+
+□ Dépôt GitHub créé et public
+□ Fichiers uploadés sur GitHub
+□ Profil Killercoda configuré
+□ Dépôt connecté à Killercoda
+□ 3 scénarios créés et publiés
+□ Tests effectués sur chaque exercice
+□ URLs récupérées pour Thinkific
+□ Intégration dans vos cours Thinkific
+
+===============================================================================
+PROCHAINES AMÉLIORATIONS POSSIBLES
+===============================================================================
+
+🚀 EXERCICES SUPPLÉMENTAIRES À CRÉER :
+- Linux Basics 04 : Permissions et propriétés
+- Linux Basics 05 : Processus et services
+- Linux Basics 06 : Réseaux et connexions
+- Linux Basics 07 : Scripts Bash introduction
+- Linux Basics 08 : Gestion des packages
+
+🔧 AMÉLIORATIONS TECHNIQUES :
+- Ajout de vérifications automatiques (checkpoints)
+- Exercices avec correction automatique
+- Badges de progression
+- Certificats de completion
+
+===============================================================================
+SUPPORT ET AIDE
+===============================================================================
+
+🆘 EN CAS DE PROBLÈME :
+1. Documentation Killercoda : https://killercoda.com/creators
+2. GitHub Issues sur votre dépôt
+3. Community Killercoda : Discord/Forum
+4. Exemples officiels : https://github.com/killercoda/scenario-examples
+
+📧 CONTACT :
+Si vous avez des questions, documentez le problème avec :
+- Captures d'écran
+- Messages d'erreur exacts
+- Étapes reproduisant le problème
+
+===============================================================================
+FÉLICITATIONS ! 🎉
+===============================================================================
+
+Vous avez maintenant un système complet d'exercices Linux interactifs !
+Vos étudiants vont adorer apprendre Linux de manière pratique et sécurisée.
+
+Bonne formation ! 🚀
