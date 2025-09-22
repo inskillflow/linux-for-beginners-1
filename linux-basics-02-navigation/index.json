@@ -1,0 +1,26 @@
+{
+  "title": "Linux Débutant • Navigation dans le système de fichiers",
+  "description": "Apprendre à naviguer dans l'arborescence Linux et comprendre la structure des dossiers.",
+  "difficulty": "beginner", 
+  "time": "25 minutes",
+  "details": {
+    "intro": { "text": "intro.md" },
+    "steps": [
+      { "title": "Comprendre l'arborescence Linux", "text": "step1.md" },
+      { "title": "Naviguer avec cd et pwd", "text": "step2.md" },
+      { "title": "Lister et explorer le contenu", "text": "step3.md" },
+      { "title": "Chemins absolus vs relatifs", "text": "step4.md" }
+    ],
+    "finish": { "text": "finish.md" },
+    "assets": {
+      "host01": [
+        { "file": "assets/setup.sh", "target": "/tmp/setup.sh" }
+      ]
+    }
+  },
+  "backend": { "imageid": "ubuntu:22.04" },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true
+  }
+}
