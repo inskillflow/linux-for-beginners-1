@@ -1,0 +1,20 @@
+{
+  "title": "Linux Débutant • Première connexion et commandes de base",
+  "description": "Découvrir l'environnement Linux et exécuter vos premières commandes dans le terminal.",
+  "difficulty": "beginner",
+  "time": "20 minutes",
+  "details": {
+    "intro": { "text": "intro.md" },
+    "steps": [
+      { "title": "Découvrir le terminal Linux", "text": "step1.md" },
+      { "title": "Obtenir de l'aide avec les commandes", "text": "step2.md" },
+      { "title": "Informations système et utilisateur", "text": "step3.md" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu:22.04" },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true
+  }
+}
