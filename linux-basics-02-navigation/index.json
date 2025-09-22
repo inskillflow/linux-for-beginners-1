@@ -18,7 +18,7 @@
       ]
     }
   },
-  "backend": { "imageid": "ubuntu:22.04" },
+  "backend": { "imageid": "ubuntu:2204" },
   "environment": {
     "uilayout": "terminal-iframe",
     "showdashboard": true
