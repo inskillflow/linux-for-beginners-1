@@ -12,7 +12,7 @@
     ],
     "finish": { "text": "finish.md" }
   },
-  "backend": { "imageid": "ubuntu:2204" },
+  "backend": { "imageId": "ubuntu:22.04" },
   "environment": {
     "uilayout": "terminal-iframe",
     "showdashboard": true
