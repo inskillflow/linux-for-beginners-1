@@ -19,7 +19,7 @@
       ]
     }
   },
-  "backend": { "imageid": "ubuntu:2204" },
+  "backend": { "imageid": "ubuntu:2004" },
   "environment": {
     "uilayout": "terminal-iframe", 
     "showdashboard": true
