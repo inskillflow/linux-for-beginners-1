@@ -18,7 +18,7 @@
       ]
     }
   },
-  "backend": { "imageId": "docker.io/library/ubuntu:22.04" },
+  "backend": { "imageid": "ubuntu:2004" },
   "environment": {
     "uilayout": "terminal-iframe",
     "showdashboard": true
